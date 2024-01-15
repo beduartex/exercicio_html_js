@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <h3>Digite os números de forma que A seja maior que B</h3>
+        <input type="login" placeholder="A" id="A">
+        <input type="login" placeholder="B" id="B">
+        <input type="submit" onclick="confereNumero()">
+    </form>
+
+</body>
+    <script>
+
+        function confereNumero() {
+            let A = document.getElementById('A').value;
+            let B = document.getElementById('B').value;
+        
+            if(A > B) {
+                alert("Deu certo")
+            } else {
+                alert("Tente novamente.")
+            }
+        
+        }
+        
+        </script>
+</html>
